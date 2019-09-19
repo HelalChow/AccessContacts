@@ -14,6 +14,7 @@
 		1BE6D50B2334082500C6DC1F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BE6D5092334082500C6DC1F /* LaunchScreen.storyboard */; };
 		1BE6D5162334082500C6DC1F /* AccessContactsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE6D5152334082500C6DC1F /* AccessContactsTests.swift */; };
 		1BE6D5212334082500C6DC1F /* AccessContactsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE6D5202334082500C6DC1F /* AccessContactsUITests.swift */; };
+		1BE6D52F2334089B00C6DC1F /* ContactStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE6D52E2334089B00C6DC1F /* ContactStruct.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		1BE6D51C2334082500C6DC1F /* AccessContactsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AccessContactsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BE6D5202334082500C6DC1F /* AccessContactsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessContactsUITests.swift; sourceTree = "<group>"; };
 		1BE6D5222334082500C6DC1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1BE6D52E2334089B00C6DC1F /* ContactStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactStruct.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				1BE6D5072334082500C6DC1F /* Assets.xcassets */,
 				1BE6D5092334082500C6DC1F /* LaunchScreen.storyboard */,
 				1BE6D50C2334082500C6DC1F /* Info.plist */,
+				1BE6D52E2334089B00C6DC1F /* ContactStruct.swift */,
 			);
 			path = AccessContacts;
 			sourceTree = "<group>";
@@ -257,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1BE6D5032334082400C6DC1F /* ViewController.swift in Sources */,
+				1BE6D52F2334089B00C6DC1F /* ContactStruct.swift in Sources */,
 				1BE6D5012334082400C6DC1F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
