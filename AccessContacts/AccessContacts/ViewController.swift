@@ -36,13 +36,14 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return 20
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell(style: .subtitle, reuseIdentifier: nil)
         let contactToDisplay = contacts[indexPath.row]
         cell.textLabel?.text = contactToDisplay.givenName + " " + contactToDisplay.familyName
+//        cell.detailTextLabel?.text = contactToDisplay.number
         return cell
     }
     
@@ -58,7 +59,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             let familyName = contact.familyName
             let number = contact.phoneNumbers.first?.value.stringValue
             
-            let contactToAppend = ContactStruct(givenName: name, familyName: familyName)
+            let contactToAppend = ContactStruct(givenName: name, familyName: familyName)//, number: number!)
             
             self.contacts.append(contactToAppend)
         }

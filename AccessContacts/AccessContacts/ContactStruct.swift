@@ -7,9 +7,12 @@
 //
 
 import Foundation
+import UIKit
 
 struct ContactStruct {
-    let givenName: String
-    let familyName: String
+    var givenName: String
+    var familyName: String
 //    let number: String
+   
+    
 }
