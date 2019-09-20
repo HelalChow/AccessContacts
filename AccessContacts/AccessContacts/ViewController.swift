@@ -4,7 +4,7 @@
 //
 //  Created by Helal Chowdhury on 9/19/19.
 //  Copyright © 2019 Helal. All rights reserved.
-//wswxwxs
+//wswxwx
 
 import UIKit
 import Contacts
@@ -36,14 +36,13 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return contacts.count
+        return 5
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell(style: .subtitle, reuseIdentifier: nil)
         let contactToDisplay = contacts[indexPath.row]
         cell.textLabel?.text = contactToDisplay.givenName + " " + contactToDisplay.familyName
-        cell.detailTextLabel?.text = contactToDisplay.number
         return cell
     }
     
@@ -59,7 +58,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             let familyName = contact.familyName
             let number = contact.phoneNumbers.first?.value.stringValue
             
-            let contactToAppend = ContactStruct(givenName: name, familyName: familyName, number: number!)
+            let contactToAppend = ContactStruct(givenName: name, familyName: familyName)
             
             self.contacts.append(contactToAppend)
         }

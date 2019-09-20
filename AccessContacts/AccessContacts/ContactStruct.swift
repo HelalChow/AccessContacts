@@ -11,5 +11,4 @@ import Foundation
 struct ContactStruct {
     let givenName: String
     let familyName: String
-    let number: String
 }
